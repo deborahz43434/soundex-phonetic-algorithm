@@ -1,6 +1,6 @@
 {
   "name": "soundex-phonetic-algorithm",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Computes a four-character phonetic code for a word to match similar-sounding English names.",
   "type": "module",
   "main": "src/index.js",
