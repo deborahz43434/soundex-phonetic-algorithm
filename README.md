@@ -29,3 +29,10 @@ The divisive Soundex rule is how H and W behave between two letters that map to 
 ## Exports
 
 - `soundex(word: string): string` — the sole function, from `src/index.js`.
+
+## Design notes
+
+The window stores values eagerly rather than keeping running aggregates. Running
+sums drift with floating point over long streams, and recomputing from a small
+buffer is cheap enough that the drift is not worth the speed.
+
